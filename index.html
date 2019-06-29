@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Giphy Searches</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -15,17 +14,36 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-12 topicBtn">
-                
+            <div class="col-md-12">
+                <h1 class="bg-info text-white p-2">Giphy Search</h1>
             </div>
         </div>
-
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form id="search-form">
+                    <label for="search-input" class="font-weight-bold">Add a Topic</label>
+                    <input type="text" id="search-input">
+                    <input id="add-topic" class="btn btn-sm btn-dark" type="submit" value="Add">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 topicDiv"></div>
+        </div>
+        <hr class="border border-dark">
+    </div>
+    <div class="container">
         <div class="row">
             <div class="col-md-12 results">
                 
             </div>
         </div>
     </div>
+    
     <script src="assets/javascript/javascript.js"></script>
 </body>
 </html>
