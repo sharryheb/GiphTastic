@@ -17,16 +17,11 @@ $(document).on("click", ".topicBtn", function ()
 
     $(".results").html("");
 
-//http://api.giphy.com/v1/gifs/search?api_key=gwT2VMfNzRtihqZZVNGafuh0VS0DvnLB&q=Dexter&limit=10&rating=pg&callback=jQuery1111046778063012826965_1561841544009&_=1561841544010
-
     $.ajax({
         url: queryURL,
-        method: "GET",
-        dataType: 'jsonp',
-        contentType: 'application/json'
+        method: "GET"
       }).then(function(response) 
       {
-        console.log(response);
         for (var i=0; i<limit; i++)
         {
             var div = $("<figure>");
@@ -58,7 +53,7 @@ function renderElements()
   $(".topicDiv").html("");
   for (var i=0; i<topics.length; i++)
   {
-    $(".topicDiv").append($("<button>").addClass("m-2 btn btn-info topicBtn").html(topics[i]));
+    $(".topicDiv").append($("<button>").addClass("m-2 btn btn-info btn-sm topicBtn").html(topics[i]));
   }
 }
 
