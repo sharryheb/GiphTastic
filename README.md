@@ -12,4 +12,8 @@ See the app here: https://sharryheb.github.io/GiphTastic/
 3. To search for giphys on that custom topic, click the button with the text of your custom topic that has now been added to the page.
 
 ## Tech Used
-APIs, JSON, AJAX
+Javascript  
+Bootstrap  
+JSON  
+AJAX  
+Giphy API
